@@ -23,7 +23,8 @@ class ProductDBTest {
                           "Name: toilet paper\n" +
                           "ID: 4\n" +
                           "Name: wifi cable\n" +
-                          "ID: 5\n";
+                          "ID: 5\n" +
+                          "End of product DB\n";
                 String result = testDb.list();
 
         // THEN

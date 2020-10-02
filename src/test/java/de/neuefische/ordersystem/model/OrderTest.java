@@ -20,15 +20,10 @@ class OrderTest {
         testOrder.addProducts(testDb.getProductById(3));
 
 
-        String expected = "Order:\n" +
-                          "Name: aircraft\n" +
-                          "ID: 3\n" +
-                          "Name: toilet paper\n" +
-                          "ID: 4\n" +
-                          "Name: guitar\n" +
-                          "ID: 1\n" +
-                          "Name: aircraft\n" +
-                          "ID: 3\n";
+        String expected = "Name: aircraft, Product ID: 3\n" +
+                          "Name: toilet paper, Product ID: 4\n" +
+                          "Name: guitar, Product ID: 1\n" +
+                          "Name: aircraft, Product ID: 3\n";
 
         // THEN
         assertEquals(expected, testOrder.list());

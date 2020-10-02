@@ -35,7 +35,7 @@ public class ProductDB {
             result += "Name: " + product.getName() +"\n" +
                     "ID: " + product.getId() + "\n";
         }
-        return result;
+        return result + "End of product DB\n";
     }
 
     @Override

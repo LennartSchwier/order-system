@@ -25,10 +25,9 @@ public class Order {
     }
 
     public String list() {
-        String result = "Order:\n";
+        String result = "";
         for (int i = 0; i < order.size(); i++) {
-            result += "Name: " + order.get(i).getName() +"\n" +
-                    "ID: " + order.get(i).getId() + "\n";
+            result += "Name: " + order.get(i).getName() + ", Product ID: " + order.get(i).getId() + "\n";
         }
         return result;
     }

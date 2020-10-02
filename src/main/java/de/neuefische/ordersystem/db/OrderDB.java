@@ -21,17 +21,13 @@ public class OrderDB {
         return orderDb.get(id);
     }
 
-    /*
-    WORK HAS ENDED HERE FOR LUNCH BREAK
-
     public String list() {
         String result = "Order DB:\n";
         for (Order order: orderDb.values()) {
-            result += "ID: " + order.getOrderId() + "\n";
-                      "Products: " +
+            result += "Order ID: " + order.getOrderId() + "; Products: \n" +
+                    order.list();
         }
-        return result;
+        return result + "End of Order DB\n";
     }
 
-     */
 }
