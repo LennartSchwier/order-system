@@ -11,7 +11,11 @@ public class OrderService {
     public void generateNewOrder(ArrayList<Product> products, OrderDB orderDb) {
         Order newOrder = new Order();
         for (Product product: products) {
-            newOrder.addProducts(product);
+            if (product.getName().isEmpty()){
+                System.out.println("Failure");
+            } else{
+                newOrder.addProducts(product);
+            }
         }
         orderDb.addOrder(newOrder);
     }

@@ -25,7 +25,11 @@ public class ProductDB {
 
 
     public Product getProductById(int id) {
-        return productDb.get(id);
+        if (!productDb.containsKey(id)) {
+            throw new RuntimeException("Not an existing product ID");
+        } else{
+            return productDb.get(id);
+        }
     }
 
 

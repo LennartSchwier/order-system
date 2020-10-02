@@ -21,7 +21,7 @@ public class AppMain {
                 List.of(
                         productDb.getProductById(3),
                         productDb.getProductById(1),
-                        productDb.getProductById(4)
+                        productDb.getProductById(2)
                 ));
 
         ArrayList<Product> secondOrder = new ArrayList<>(
